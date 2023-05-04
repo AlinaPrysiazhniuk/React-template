@@ -2,8 +2,16 @@ import React from "react";
 
 class Counter extends React.Component{
 
+static defaultProps = {
+    initialValue: 0,
+}
+
+static propTypes = {
+    ///
+}
+
 state = {
-    value: 0,
+    value: this.props.initialValue,
 }
 
 handleIncrement = () => {
