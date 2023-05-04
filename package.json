@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://AlinaPrysiazhniuk.github.io/React_template/",
+  "homepage": "https://AlinaPrysiazhniuk.github.io/React-template/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
