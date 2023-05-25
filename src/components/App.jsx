@@ -1,24 +1,17 @@
-import { NavLink, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from 'pages/Home';
 import Dogs from 'pages/Dogs';
+import DogDetails from 'pages/DogDetails';
+import { Layout } from './Layout';
 
 export const App = () => {
   return (
-    <div>
-      <ul>
-        <li>
-          <NavLink to="/">Домашня</NavLink>
-        </li>
-        <li>
-          <NavLink to="/dogs">Колекція</NavLink>
-        </li>
-      </ul>
-
-      <Routes>
+    <Routes>
+      <Route path="/" element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/dogs" element={<Dogs />} />
-        <Route path="/dogs/:dogId" element={<div>Елемент колекції</div>} />
-      </Routes>
-    </div>
+        <Route path="/dogs/:dogId" element={<DogDetails />} />
+      </Route>
+    </Routes>
   );
 };
